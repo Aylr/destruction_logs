@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "timestamp": "2015-07-02T22:52:18.155528+00:00",
+    "object": {
+        "jsonObjectVersion": 2,
+        "result": [{
+            "code": "0673",
+            "ndc": null,
+            "total": 3.0,
+            "name": "Morphine Sulfate, USP",
+            "uom": "g"
+        }, {
+            "code": "0163",
+            "ndc": null,
+            "total": 1.5,
+            "name": "Testosterone, USP Micronized",
+            "uom": "g"
+        }, {
+            "code": "1754",
+            "ndc": null,
+            "total": 3.0,
+            "name": "Ketamine HCl, USP",
+            "uom": "g"
+        }],
+        "targetYield": "30.00000000000000000000"
+    },
+    "value": "1000021",
+    "error": false,
+    "message": null,
+    "class": null
+}

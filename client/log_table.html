@@ -1,0 +1,15 @@
+<template name="logTableTemplate">
+    <h2>Log</h2>
+    <table class="table">
+        <tr>
+            <th>Date</th>
+            <th>Drug</th>
+            <th>NDC</th>
+            <th>Quantity
+                <br />(mL/Ea/g)</th>
+            <th>Initials</th>
+            <th>Reason</th>
+        </tr>
+        {{#each destructionLogs}} {{> logItemTemplate}} {{/each}}
+    </table>
+</template>

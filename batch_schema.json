@@ -1,0 +1,51 @@
+db.batches.insert({
+	'date_started' : new Date(),
+	'date_completed' : null,
+	'complete' : false,
+	'user_started_batch' : 'TM',
+	'user_completed_batch' : null,
+	'items' : [
+		{
+			'date' : new Date(),
+			'user_initials' : 'TM',
+			'reason' : 'expired',
+			'lot' : 'F23423',
+			'lot_yield' : 100,
+			'lot_yield_units' : 'g',
+			'destroyed_amount' : 25,
+			'drugs' : [
+				{
+					'NDC' : 4828234782,
+					'name' : 'kertritonium',
+					'quantity' : 2.4,
+					'units' : 'g',
+				},
+				{
+					'NDC' : 423413413,
+					'name' : 'malcholite',
+					'quantity' : 37,
+					'units' : 'mg',
+				}
+			]
+		},
+		{
+			'date' : new Date(),
+			'user_initials' : 'TM',
+			'reason' : 'expired',
+			'drugs' : [
+				{
+					'NDC' : 664413241234,
+					'name' : 'brachaelim',
+					'quantity' : 770,
+					'units' : 'mg',
+				},
+				{
+					'NDC' : 1341513412,
+					'name' : 'petrophicol',
+					'quantity' : 600,
+					'units' : 'mg',
+				}
+			]
+		}
+	]
+})

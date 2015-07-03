@@ -1,0 +1,20 @@
+<template name="batchListTemplate">
+    <h2>Batches</h2>
+    <table>
+        <tr>
+            <th>View</th>
+            <th>Date Started</th>
+            <th>Date Completed</th>
+            <th># items</th>
+        </tr>
+        {{#each batches}} {{> batchRowTemplate}} {{/each}}
+    </table>
+</template>
+<template name="batchRowTemplate">
+    <tr>
+        <td>view link</td>
+        <td>{{date_started}}</td>
+        <td>{{date_completed}}</td>
+        <td>{{item_count}}</td>
+    </tr>
+</template>

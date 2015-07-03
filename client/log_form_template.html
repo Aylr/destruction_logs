@@ -1,0 +1,46 @@
+<template name="logFormTemplate">
+    <form class="calculation_form">
+        <div class="form-group">
+            <label for="lot_yield">Original Lot Yield</label>
+            <input type="text" id="lot_yield" class="form-control" />
+            <label for="lot_drug_used">Original Drug Used</label>
+            <input type="text" id="lot_drug_used" class="form-control" />
+            <label for="lot_drug_units">Original Drug Units</label>
+            <input type="text" id="lot_drug_units" class="form-control" />
+            <label for="disposal_quantity">Disposal Quantity</label>
+            <input type="text" id="disposal_quantity" class="form-control" />
+            <input type="submit" class="btn btn-info" id="calculate" value="Calculate" />
+        </div>
+    </form>
+    <form class="log_form">
+        <div class="form-group">
+            <label for="NDC">NDC</label>
+            <input type="text" id="NDC" class="form-control" placehoder="NDC" />
+        </div>
+        <div class="form-group">
+            <label for="drug_name">Drug Name</label>
+            <input type="text" id="drug_name" class="form-control" placehoder="drug" />
+        </div>
+        <div class="form-group">
+            <label for="units">Units</label>
+            <input type="text" id="units" class="form-control" placehoder="g" />
+        </div>
+        <div class="form-group">
+            <label for="total_quantity">Amount of Drug Disposed</label>
+            <input type="text" id="total_quantity" class="form-control" placehoder="quantity" />
+        </div>
+        <strong>Reason</strong>
+        <div class="radio">
+            <label>
+                <input type="radio" id="reasonExpired" value="expired" name="reasons" /> Expired
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" id="reasonDiscard" value="discard" name="reasons" /> Discard
+            </label>
+        </div>
+        <input type="button" class="btn btn-danger" id="clear" value="Clear" />
+        <input type="submit" class="btn btn-primary" id="submit" value="Submit" />
+    </form>
+</template>
