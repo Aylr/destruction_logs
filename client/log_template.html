@@ -1,0 +1,68 @@
+<template name="logTemplate">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Drug Disposal</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h2>1. Search</h2>
+        </div>
+        <div class="col-md-2">
+            {{> lotLookupFormTemplate}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h2>2. Calculate</h2>
+        </div>
+        <div class="col-md-9">
+            {{> calculationFormTemplate}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h2>2. Verify &amp; Save</h2>
+        </div>
+        <div class="col-md-9">
+            <form class="log_form">
+            <!--
+                <div class="form-group">
+                    <label for="NDC">NDC</label>
+                    <input type="text" id="NDC" class="form-control" placehoder="NDC" />
+                </div>
+                <div class="form-group">
+                    <label for="drug_name">Drug Name</label>
+                    <input type="text" id="drug_name" class="form-control" placehoder="drug" />
+                </div>
+                <div class="form-group">
+                    <label for="units">Units</label>
+                    <input type="text" id="units" class="form-control" placehoder="g" />
+                </div>
+                <div class="form-group">
+                    <label for="total_quantity">Amount of Drug Disposed</label>
+                    <input type="text" id="total_quantity" class="form-control" placehoder="quantity" />
+                </div>
+                -->
+                <strong>Reason</strong>
+                <div class="radio">
+                    <label>
+                        <input type="radio" id="reasonExpired" value="expired" name="reasons" /> Expired
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" id="reasonDiscard" value="discard" name="reasons" /> Discard
+                    </label>
+                </div>
+                <input type="button" class="btn btn-danger" id="clear" value="Clear" />
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 log_table">
+            {{> logTableTemplate}}
+        </div>
+    </div>
+</template>
