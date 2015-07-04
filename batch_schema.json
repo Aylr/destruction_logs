@@ -32,6 +32,10 @@ db.batches.insert({
 			'date' : new Date(),
 			'user_initials' : 'TM',
 			'reason' : 'expired',
+			'lot' : 'F52234',
+			'lot_yield' : 100,
+			'lot_yield_units' : 'g',
+			'destroyed_amount' : 57,
 			'drugs' : [
 				{
 					'NDC' : 664413241234,
