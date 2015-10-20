@@ -52,9 +52,9 @@ Template.calculationFormTemplate.events({
 Template.lotLookupFormTemplate.events({
     "submit form.lot_form": function(event, template) { // on "Lot Lookup" button
         event.preventDefault();
-        console.log("Looking up lot...");
 
         var lot = event.target.lotNumber.value; // get lot from form
+        console.log("Looking up lot: " + lot);
 
         Meteor.call('lookup', lot, function(error, result) {
 
@@ -107,7 +107,9 @@ Template.lotLookupFormTemplate.events({
 
                         console.log(temp_drug);
 
-                        $("input#drug_name").val(drug_name);
+                        //update GUI
+
+                        //$("input#drug_name").val(drug_name);
                         $("input#NDC").val(NDC);
                         $("input#lot_drug_used").val(quantity);
                         $("input#lot_yield").val(lot_yield);

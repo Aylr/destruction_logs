@@ -1,31 +1,47 @@
 <template name="calculationFormTemplate">
-    <div class="NDC-table">
-        <div class="row">
-            <div class="col-md-2">
-                <form class="calculation_form">
-                    <div class="form-group">
-                        <label for="disposal_quantity">Disposal Quantity</label>
-                        <input type="text" id="disposal_quantity" class="form-control" />
-                        <input type="submit" class="btn btn-info" id="calculate" value="Calculate" />
-                    </div>
-                </form>
+    <div class="col-md-2">
+        <form class="calculation_form">
+            <div class="form-group">
+                <label for="disposal_quantity">Disposal Quantity</label>
+                <input type="text" id="disposal_quantity" class="form-control" />
+                <input type="submit" class="btn btn-info" id="calculate" value="Calculate" />
             </div>
-
-            <div class='col-md-7'>
-                <h3>Schedule II-V Drugs In Compounded Lot <span class="lot"></span></h3>
-                <table class="table table-condensed log-preview-table">
-                    <tbody>
-                        <tr class="table-striped header"><th>#</th><th>Drug</th><th>NDC</th><th>Amount</th><th>Units</th></tr>
-                        <!-- each goes here -->
-                        
-                        
-
-                        <tr class="table-striped"><td class="drug-number 1">1</td><td class="name">Bromide</td><td class="NDC">9293423423</td><td class="amount-disposed">30</td><td class="units">mg</td></tr>
-                        <tr class="table-striped"><td class="drug-number 2">2</td><td class="name">Larsene</td><td class="NDC">4o234392o34</td><td class="amount-disposed">100</td><td class="units">mL</td></tr>
-                        <tr class="table-striped"><td class="drug-number 3">3</td><td class="name">Actinate</td><td class="NDC">9293423423</td><td class="amount-disposed">1</td><td class="units">kg</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </form>
+    </div>
+    <div class='col-md-6'>
+        <h3>Schedule II-V Drugs In Compounded Lot <span class="lot"></span></h3>
+        <table class="table table-condensed log-preview-table">
+            <tbody>
+                <tr class="table-striped header">
+                    <th>#</th>
+                    <th>Drug</th>
+                    <th>NDC</th>
+                    <th>Amount</th>
+                    <th>Units</th>
+                </tr>
+                <!-- each goes here -->
+                <tr class="table-striped">
+                    <td class="drug-number 1">1</td>
+                    <td class="name">Bromide</td>
+                    <td class="NDC">9293423423</td>
+                    <td class="amount-disposed">30</td>
+                    <td class="units">mg</td>
+                </tr>
+                <tr class="table-striped">
+                    <td class="drug-number 2">2</td>
+                    <td class="name">Larsene</td>
+                    <td class="NDC">4o234392o34</td>
+                    <td class="amount-disposed">100</td>
+                    <td class="units">mL</td>
+                </tr>
+                <tr class="table-striped">
+                    <td class="drug-number 3">3</td>
+                    <td class="name">Actinate</td>
+                    <td class="NDC">9293423423</td>
+                    <td class="amount-disposed">1</td>
+                    <td class="units">kg</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </template>

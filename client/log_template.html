@@ -1,7 +1,7 @@
 <template name="logTemplate">
     <div class="row">
         <div class="col-md-12">
-            <h1>Drug Disposal</h1>
+            <h1>Compounding Destruction Logs :: Drug Disposal Entry</h1>
         </div>
     </div>
     <div class="row">
@@ -11,18 +11,16 @@
         <div class="col-md-2">
             {{> lotLookupFormTemplate}}
         </div>
-        <div class="col-md-6">
-            <h3>Lot #: _____</h3>
-            <p>NDC: ______________</p>
+        <div class="col-md-6 lot-details">
+            <h3>Lot #: <span class="lot"></span></h3>
+            <p>Compound NDC: ___99999923413______</p>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3">
             <h2>2. Calculate</h2>
         </div>
-        <div class="col-md-9">
-            {{> calculationFormTemplate}}
-        </div>
+        {{> calculationFormTemplate}}
     </div>
     <div class="row">
         <div class="col-md-3">
@@ -30,24 +28,6 @@
         </div>
         <div class="col-md-9">
             <form class="log_form">
-            <!--
-                <div class="form-group">
-                    <label for="NDC">NDC</label>
-                    <input type="text" id="NDC" class="form-control" placehoder="NDC" />
-                </div>
-                <div class="form-group">
-                    <label for="drug_name">Drug Name</label>
-                    <input type="text" id="drug_name" class="form-control" placehoder="drug" />
-                </div>
-                <div class="form-group">
-                    <label for="units">Units</label>
-                    <input type="text" id="units" class="form-control" placehoder="g" />
-                </div>
-                <div class="form-group">
-                    <label for="total_quantity">Amount of Drug Disposed</label>
-                    <input type="text" id="total_quantity" class="form-control" placehoder="quantity" />
-                </div>
-                -->
                 <strong>Reason</strong>
                 <div class="radio">
                     <label>
